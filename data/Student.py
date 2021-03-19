@@ -12,16 +12,16 @@ def initData():
     if not os.path.exists(folderPath):
         os.makedirs(folderPath)
     if not os.path.isfile(filePath):
-        with open(filePath, 'w') as f:
+        with open(filePath, 'w', encoding='UTF-8') as f:
             f.write('')
-    with open(filePath, 'r') as f:
+    with open(filePath, 'r', encoding='UTF-8') as f:
         stus = [Student(*stu.replace('\n', '').split(',')) for stu in filter(lambda line: line != '\n', f.readlines())]
     return stus
 
 
 # 重写整个数据文件
 def flushAllStus():
-    with open(filePath, 'w') as f:
+    with open(filePath, 'w', encoding='UTF-8') as f:
         f.write('\n'.join([*[stu.toFileString() for stu in allStus], '']))
 
 
@@ -45,7 +45,7 @@ def updateStudent(stu, isAdd):
     # 将数据添加到内存中
     allStus.append(stu)
     # 修改数据文件
-    with open(filePath, 'a') as f:
+    with open(filePath, 'a', encoding='UTF-8') as f:
         f.write(f'{stu.toFileString()}\n')
 
 
