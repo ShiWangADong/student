@@ -1,8 +1,8 @@
-from manage.common.ActionItem import ActionItem
-from manage.control.Delete import deleteAction
-from manage.control.Query import queryAction
-from manage.control.Update import addAction, editAction
-from manage.control.Sort import sortAction
+from common.ActionItem import ActionItem
+from control.Delete import deleteAction
+from control.Query import queryAction
+from control.Update import addAction, editAction
+from control.Sort import sortAction
 
 
 # 主函数

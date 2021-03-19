@@ -1,5 +1,5 @@
 from sys import exit
-from manage.common.Tools import loopInput
+from common.Tools import loopInput
 
 
 # 该类主要解决菜单的循环调用问题

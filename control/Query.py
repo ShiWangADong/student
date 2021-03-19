@@ -1,6 +1,6 @@
-from manage.common.ActionItem import ActionItem
-from manage.module.Student import Student
-from manage.data.Student import queryStudent
+from common.ActionItem import ActionItem
+from module.Student import Student
+from data.Student import queryStudent
 
 
 # 添加学生

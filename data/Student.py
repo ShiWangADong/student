@@ -1,5 +1,5 @@
 import os
-from manage.module.Student import Student
+from module.Student import Student
 
 folderPath = os.path.join(os.getcwd(), 'data')
 filePath = os.path.join(folderPath, 'stu.txt')

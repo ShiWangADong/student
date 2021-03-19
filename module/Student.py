@@ -1,5 +1,5 @@
-from manage.common.Tools import *
-from manage.common.ActionItem import ActionItem, exitAction
+from common.Tools import *
+from common.ActionItem import ActionItem, exitAction
 
 
 class Student:

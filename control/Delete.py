@@ -1,6 +1,6 @@
-from manage.common.ActionItem import ActionItem
-from manage.module.Student import Student
-from manage.data.Student import delStudent
+from common.ActionItem import ActionItem
+from module.Student import Student
+from data.Student import delStudent
 
 
 # 添加学生
